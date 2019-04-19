@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.form-group.custom-icon {
+    position: relative;
+    .preview-icon { 
+        position: absolute;
+        display: block; //decir como se va a mostrar, en este cso uno abajo del otro
+        width: 24px; //ancho
+        height: 24px; //altura
+        padding: 0; //entre el contenido de la etiqueta y el borde
+        border-radius: 100%;
+        right: 10px;
+        bottom: 7px;
+        z-index: 2;
+        text-align: center;
+        color: #616161;
+        &:hover {
+            //cuando pasa e mouse se hace obscuro
+            background-color: rgba(0, 0, 0, 0.1)
+        }
+    }
+}
